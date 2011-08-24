@@ -1,5 +1,4 @@
 #!/bin/sh
-#modified
 xrdb .Xresources &
 VBoxClient-all &
 #cairo-compmgr &
