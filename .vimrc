@@ -37,11 +37,15 @@ set incsearch
 set hlsearch
 
 "Status line gnarliness
+hi StatusLine term=reverse ctermbg=darkgrey ctermfg=white
 set laststatus=2
-set statusline=%F%m%r%h%w\ (%{&ff}){%Y}\ [%l,%v][%p%%]
+set statusline=%F\ [%M%R]%=%y\ [%l/%L]
+
+au InsertEnter * hi StatusLine term=reverse ctermbg=yellow ctermfg=black
+au InsertLeave * hi StatusLine term=reverse ctermfg=white ctermbg=darkgrey
 
 "remap the search so that the line jumps to center
-map n nzz
+map n nzz 
 map N Nzz
 
 "killer colorsheme
