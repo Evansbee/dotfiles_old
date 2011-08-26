@@ -20,11 +20,14 @@ set expandtab
 set smarttab
 
 "need to keep tabs for hand editing makefiles -- stupid.
-autocmd FileType make set noexpandtab
 
 "better spacing
 set shiftwidth=3
 set softtabstop=3
+
+
+autocmd FileType make set noexpandtab
+autocmd FileType make set nosmarttab
 
 "ignore case on searches (or do smartcase)
 set ignorecase
