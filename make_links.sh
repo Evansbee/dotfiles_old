@@ -1,5 +1,5 @@
 #!/bin/bash
-ln .xinitrc ~/.xinitrc
-ln .Xdefaults ~/.Xdefaults
-ln .Xresources ~/.Xresources
-ln .vimrc ~/.vimrc
+ln -f .xinitrc ~/.xinitrc
+ln -f .Xdefaults ~/.Xdefaults
+ln -f .Xresources ~/.Xresources
+ln -f .vimrc ~/.vimrc
