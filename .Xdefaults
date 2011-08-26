@@ -27,16 +27,19 @@ urxvt*externalBorder:       0
 !
 
 
-URxvt.font:		xft:M+ 2m:pixelsize=14:regular:antialias=false
-URxvt.italicFont:	xft:Consolas:pixelsize=14:regular:italic:autohint=true:antialias=true
-URxvt.boldFont:		xft:M+ 2m:pixelsize=14:bold:antialias=false
-URxvt.boldItalicFont:	xft:Consolas:pixelsize=14:bold:italic:autohint=true:antialias=true
+!URxvt.font:		xft:M+ 2m:pixelsize=14:regular:antialias=false
+!URxvt.italicFont:	xft:Consolas:pixelsize=14:regular:italic:autohint=true:antialias=true
+!URxvt.boldFont:		xft:M+ 2m:pixelsize=14:bold:antialias=false
+!URxvt.boldItalicFont:	xft:Consolas:pixelsize=14:bold:italic:autohint=true:antialias=true
+
+urxvt.font:	xft:montecarlo:pixelsize=15
+urxvt.boldFont: xft:montecarlo:pixelsize=15
 
 ! Extensions
 ! Catch ugly URLs
 urxvt*cutchars:        '"'()*<>[]{|}
 ! Pseudo Transparency
-!urxvt*shading:    50
+urxvt*shading:    50
 !urxvt*transparent:true
 
 
@@ -51,7 +54,9 @@ URxvt.highlightTextColor:#ecbcbc
 URxvt.cursorColor:       #005f87
 URxvt.cursorColor2:      #87ffff
 URxvt*foreground:        #dcdccc
-URxvt*background:        #171717
+urxvt.depth: 32
+!URxvt*background:   rgba:1700/1700/1700/dddd 
+urxvt*background: #171717
 
 !More zerburn shit
 ! black + red
