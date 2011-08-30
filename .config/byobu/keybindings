@@ -1,0 +1,4 @@
+source /usr/share/byobu/keybindings/common
+escape "^Aa"
+register x "^A"
+bindkey "^A"
