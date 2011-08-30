@@ -22,8 +22,8 @@ for file in $FILES; do
       #files to backup...
       mkdir -p $BACKUPDIRECTORY
       #do a copy here so that the symlink
-      cp ~/$file $BACKUPDIRECTORY/
-      rm ~/$file
+      cp -rL ~/$file $BACKUPDIRECTORY/
+      rm -r ~/$file
    fi
 done
 
