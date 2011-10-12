@@ -3,5 +3,5 @@ xrdb .Xresources &
 VBoxClient-all &
 #cairo-compmgr &
 sleep 1s && xsetroot -cursor_name left_ptr &
-#xscreensaver -no-splash &
+xscreensaver -no-splash &
 exec awesome
