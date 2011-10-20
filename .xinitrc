@@ -5,4 +5,4 @@ VBoxClient-all &
 sleep 1s && xsetroot -cursor_name left_ptr &
 xscreensaver -no-splash &
 #exec awesome
-exec openbox
+exec openbox-session
