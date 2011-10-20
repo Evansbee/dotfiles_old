@@ -35,8 +35,8 @@ urxvt*externalBorder:       0
 !urxvt.font:	xft:montecarlo:pixelsize=15
 !urxvt.boldFont: xft:montecarlo:pixelsize=15
 
-urxvt.boldfont:      xft:DejaVu Sans Mono-Bold:pixelsize=12
-urxvt.font:  xft:DejaVu Sans Mono:pixelsize=12
+urxvt.boldfont:      xft:DejaVu Sans Mono-Bold:pixelsize=14
+urxvt.font:  xft:DejaVu Sans Mono:pixelsize=14
 
 
 ! Extensions
