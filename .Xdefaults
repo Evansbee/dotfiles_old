@@ -32,8 +32,12 @@ urxvt*externalBorder:       0
 !URxvt.boldFont:		xft:M+ 2m:pixelsize=14:bold:antialias=false
 !URxvt.boldItalicFont:	xft:Consolas:pixelsize=14:bold:italic:autohint=true:antialias=true
 
-urxvt.font:	xft:montecarlo:pixelsize=15
-urxvt.boldFont: xft:montecarlo:pixelsize=15
+!urxvt.font:	xft:montecarlo:pixelsize=15
+!urxvt.boldFont: xft:montecarlo:pixelsize=15
+
+urxvt.boldfont:      xft:DejaVu Sans Mono-Bold:pixelsize=12
+urxvt.font:  xft:DejaVu Sans Mono:pixelsize=12
+
 
 ! Extensions
 ! Catch ugly URLs
@@ -53,37 +57,74 @@ URxvt.highlightColor:    #2b2b2b
 URxvt.highlightTextColor:#ecbcbc
 URxvt.cursorColor:       #005f87
 URxvt.cursorColor2:      #87ffff
-URxvt*foreground:        #dcdccc
+!URxvt*foreground:        #dcdccc
 urxvt.depth: 32
 !URxvt*background:   rgba:1700/1700/1700/dddd 
-urxvt*background: #171717
+!urxvt*background: #171717
+
+*background: #242424
+*foreground: #e2e2e5
+# Black
+*color0:    rgb:00/00/00
+# Red
+*color1:    rgb:ff/5d/28
+# Green
+*color2:    rgb:b1/d6/31
+# Yellow
+*color3:    rgb:e6/ea/50
+# Blue
+*color4:    rgb:7e/8a/a2
+# Magenta
+*color5:    rgb:af/5f/5f
+# Cyan
+*color6:    rgb:ac/f0/f2
+# White
+*color7:    rgb:e2/e2/e5
+# Black
+*color8:    rgb:00/00/00
+# Red
+*color9:    rgb:ff/5d/28
+# Green
+*color10:    rgb:b1/d6/31
+# Yellow
+*color11:    rgb:e6/ea/50
+# Blue
+*color12:    rgb:7e/8a/a2
+# Magenta
+*color13:    rgb:af/5f/5f
+# Cyan
+*color14:    rgb:ac/f0/f2
+# White
+*color15:    rgb:e2/e2/e5
+
+
 
 !More zerburn shit
 ! black + red
 !urxvt*color0:     #3f3f3f
-urxvt*color0:      #1E2320
-urxvt*color1:      #705050
+!urxvt*color0:      #1E2320
+!urxvt*color1:      #705050
 ! green + yellow
-urxvt*color2:      #60b48a
-urxvt*color3:      #dfaf8f
+!urxvt*color2:      #60b48a
+!urxvt*color3:      #dfaf8f
 ! blue + purple
-urxvt*color4:      #506070
-urxvt*color5:      #dc8cc3
+!urxvt*color4:      #506070
+!urxvt*color5:      #dc8cc3
 ! cyan + white
-urxvt*color6:      #8cd0d3
-urxvt*color7:      #dcdccc
+!urxvt*color6:      #8cd0d3
+!urxvt*color7:      #dcdccc
 ! bright-black + bright-red
-urxvt*color8:      #709080
-urxvt*color9:      #dca3a3
+!urxvt*color8:      #709080
+!urxvt*color9:      #dca3a3
 ! bright-green + bright-yellow
-urxvt*color10:     #c3bf9f
-urxvt*color11:     #f0dfaf
+!urxvt*color10:     #c3bf9f
+!urxvt*color11:     #f0dfaf
 ! bright-blue + bright-purple
-urxvt*color12:     #94bff3
-urxvt*color13:     #ec93d3
+!urxvt*color12:     #94bff3
+!urxvt*color13:     #ec93d3
 ! bright-cyan + bright-white
-urxvt*color14:     #93e0e3
-urxvt*color15:     #ffffff
+!urxvt*color14:     #93e0e3
+!urxvt*color15:     #ffffff
 !}}}
 
 !{{{ XLOCK
