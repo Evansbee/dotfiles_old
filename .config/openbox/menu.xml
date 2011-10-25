@@ -20,7 +20,7 @@
   <separator label="applications" />
   <item label="chromium"><action name="Execute"><command>chromium</command></action></item>
   <item label="urxvt"><action name="Execute"><command>urxvt</command></action></item> 
-  <item label="audacious"><action name="Execute"><command>audacious</command></action></item>
+  <item label="sonata"><action name="Execute"><command>sonata</command></action></item>
   <item label="gvim"><action name="Execute"><command>gvim</command></action></item>
   <item label="thunar"><action name="Execute"><command>thunar</command></action></item>
   <separator label="System" />
