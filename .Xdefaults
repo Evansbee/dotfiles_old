@@ -1,5 +1,3 @@
-! anrxc X application resource database
-
 
 !{{{ XFT
 Xft.dpi:       96
@@ -11,111 +9,69 @@ Xft.rgba:      rgb
 
 
 !{{{ URXVT
-!
 ! General
-urxvt*termName:           rxvt-unicode-256color
-urxvt*scrollBar:         false
-urxvt*secondaryScroll:    true
-urxvt*saveLines:         65535
+urxvt*termName:         rxvt-unicode-256color
+urxvt*scrollBar:        false
+urxvt*secondaryScroll:  true
+urxvt*saveLines:        65535
 urxvt*cursorBlink:      false
-!urxvt*cursorUnderline:   true
-urxvt*urgentOnBell:       true
+!urxvt*cursorUnderline: true
+urxvt*urgentOnBell:     true
 !urxvt*override-redirect:false
 urxvt*borderLess:       false
-urxvt*internalBorder:       0
-urxvt*externalBorder:       0
+urxvt*internalBorder:   0
+urxvt*externalBorder:   0
 
-urxvt.boldfont:      xft:DejaVu Sans Mono-Bold:pixelsize=14
-urxvt.font:  xft:DejaVu Sans Mono:pixelsize=14
-
-
-! Extensions
-! Catch ugly URLs
-urxvt*cutchars:        '"'()*<>[]{|}
-! Pseudo Transparency
-urxvt*shading:    50
-!urxvt*transparent:true
+urxvt.boldfont:         xft:DejaVu Sans Mono-Bold:pixelsize=14
+urxvt.font:             xft:DejaVu Sans Mono-Bold:pixelsize=14
 
 
+urxvt*cutchars:         '"'()*<>[]{|}
+urxvt*shading:          50
 
-! Zenburn color-scheme
-!urxvt*background:  #3f3f3f
-!urxvt*foreground:  #dcdccc
 URxvt.underlineColor:    #404040
 URxvt.boldColor:         #313633
 URxvt.highlightColor:    #2b2b2b
 URxvt.highlightTextColor:#ecbcbc
 URxvt.cursorColor:       #005f87
 URxvt.cursorColor2:      #87ffff
-!URxvt*foreground:        #dcdccc
 urxvt.depth: 32
-!URxvt*background:   rgba:1700/1700/1700/dddd 
-!urxvt*background: #171717
 
-*background: #242424
-*foreground: #e2e2e5
+*background:   #f7f7f7
+*foreground:   #2c2c2c
+
+
 # Black
-*color0:    rgb:00/00/00
+*color0:    #2c2c2c
+*color8:    #2c2c2c
+
 # Red
-*color1:    rgb:ff/5d/28
+*color1:    #c6302c
+*color9:    #c6302c
+
 # Green
-*color2:    rgb:b1/d6/31
+*color2:    #4f770d
+*color10:   #4f770d
+
 # Yellow
-*color3:    rgb:e6/ea/50
+*color3:    #593900
+*color11:   #593900
+
 # Blue
-*color4:    rgb:7e/8a/a2
+*color4:    #031d3a
+*color12:   #031d3a
+
 # Magenta
-*color5:    rgb:af/5f/5f
+*color5:    #af5f5f
+*color13:   #af5f5f
+
 # Cyan
-*color6:    rgb:ac/f0/f2
+*color6:    #77aad3
+*color14:   #77aad3
+
 # White
-*color7:    rgb:e2/e2/e5
-# Black
-*color8:    rgb:00/00/00
-# Red
-*color9:    rgb:ff/5d/28
-# Green
-*color10:    rgb:b1/d6/31
-# Yellow
-*color11:    rgb:e6/ea/50
-# Blue
-*color12:    rgb:7e/8a/a2
-# Magenta
-*color13:    rgb:af/5f/5f
-# Cyan
-*color14:    rgb:ac/f0/f2
-# White
-*color15:    rgb:e2/e2/e5
-
-
-
-!More zerburn shit
-! black + red
-!urxvt*color0:     #3f3f3f
-!urxvt*color0:      #1E2320
-!urxvt*color1:      #705050
-! green + yellow
-!urxvt*color2:      #60b48a
-!urxvt*color3:      #dfaf8f
-! blue + purple
-!urxvt*color4:      #506070
-!urxvt*color5:      #dc8cc3
-! cyan + white
-!urxvt*color6:      #8cd0d3
-!urxvt*color7:      #dcdccc
-! bright-black + bright-red
-!urxvt*color8:      #709080
-!urxvt*color9:      #dca3a3
-! bright-green + bright-yellow
-!urxvt*color10:     #c3bf9f
-!urxvt*color11:     #f0dfaf
-! bright-blue + bright-purple
-!urxvt*color12:     #94bff3
-!urxvt*color13:     #ec93d3
-! bright-cyan + bright-white
-!urxvt*color14:     #93e0e3
-!urxvt*color15:     #ffffff
-!}}}
+*color7:    #f7f7f7
+*color15:   #f7f7f7
 
 !{{{ XLOCK
 XLock.mode:          blank

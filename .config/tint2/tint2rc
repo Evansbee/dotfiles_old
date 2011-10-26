@@ -5,9 +5,9 @@
 # Background definitions
 # ID 1
 rounded = 0
-border_width = 0
-background_color = #000000 55
-border_color = #FFFFFF 12
+border_width = 1
+background_color = #000000 73
+border_color = #FFFFFF 26
 
 # ID 2
 rounded = 0
@@ -46,10 +46,10 @@ task_text = 1
 task_centered = 1
 task_maximum_size = 250 30
 task_padding = 10 0
-task_background_id = 1
-task_active_background_id = 1
-task_urgent_background_id = 1
-task_iconified_background_id = 1
+task_background_id = 0
+task_active_background_id = 0
+task_urgent_background_id = 0
+task_iconified_background_id = 0
 
 # Task Icons
 task_icon_asb = 100 0 0
@@ -59,14 +59,14 @@ task_iconified_icon_asb = 70 0 0
 
 # Fonts
 task_font = DejaVu Sans Bold Semi-Condensed 9
-task_font_color = #FFFFFF 100
-task_active_font_color = #75B6D8 100
+task_font_color = #ECECEC 100
+task_active_font_color = #6FC8F7 100
 task_urgent_font_color = #FF1414 100
 task_iconified_font_color = #C7C7C7 100
 font_shadow = 0
 
 # System Tray
-systray = 1
+systray = 0
 systray_padding = 0 4 5
 systray_sort = ascending
 systray_background_id = 0
@@ -74,10 +74,10 @@ systray_icon_size = 16
 systray_icon_asb = 100 0 100
 
 # Clock
-time1_format = %I:%M %P, %A %d %B
+time1_format = it's %I:%M %P on %a. the %d of %b.
 time1_font = DejaVu Sans Bold Semi-Condensed 9
 clock_font_color = #FFFFFF 100
-clock_padding = 25 0
+clock_padding = 10 0
 clock_background_id = 0
 clock_rclick_command = orage
 
@@ -103,7 +103,7 @@ battery_low_cmd = notify-send "battery low"
 battery_hide = 98
 bat1_font = sans 8
 bat2_font = sans 6
-battery_font_color = #FFFFFF 70
+battery_font_color = #FFFFFF 69
 battery_padding = 1 0
 battery_background_id = 0
 
