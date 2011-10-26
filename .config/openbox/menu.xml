@@ -10,6 +10,12 @@
       <startupnotify><enabled>yes</enabled></startupnotify>
     </action>
   </item>
+  
+  <item label="GTK Theme Switcher">
+      <action name="Execute">
+      <command>lxappearance</command>
+      </action>
+      </item>
   <separator />
   <item label="Reconfigure Openbox">
     <action name="Reconfigure" />
