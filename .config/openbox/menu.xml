@@ -1,42 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<?xml version="1.0" encoding="utf-8"?>
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
-
-
-<menu id="system-menu" label="System">
-  <item label="Openbox Configuration Manager">
-    <action name="Execute">
-      <command>obconf</command>
-      <startupnotify><enabled>yes</enabled></startupnotify>
-    </action>
-  </item>
-  
-  <item label="GTK Theme Switcher">
-      <action name="Execute">
-      <command>lxappearance</command>
-      </action>
-      </item>
-  <separator />
-  <item label="Reconfigure Openbox">
-    <action name="Reconfigure" />
-  </item>
-</menu>
-
-<menu id="root-menu" label="Openbox 3">
-  <separator label="applications" />
-  <item label="chromium"><action name="Execute"><command>chromium</command></action></item>
-  <item label="urxvt"><action name="Execute"><command>urxvt</command></action></item> 
-  <item label="sonata"><action name="Execute"><command>sonata</command></action></item>
-  <item label="gvim"><action name="Execute"><command>gvim</command></action></item>
-  <item label="thunar"><action name="Execute"><command>thunar</command></action></item>
-  <separator label="System" />
-  <menu id="system-menu"/>
-  <separator />
-  <item label="Log Out">
-    <action name="Exit">
-      <prompt>yes</prompt>
-    </action>
-  </item>
-</menu>
-
+	<menu id="system-menu" label="System">
+		<item label="Openbox Configuration Manager">
+			<action name="Execute">
+				<command>
+					obconf
+				</command>
+				<startupnotify>
+					<enabled>
+						yes
+					</enabled>
+				</startupnotify>
+			</action>
+		</item>
+		<item label="Panel Configuration">
+			<action name="Execute">
+				<execute>
+					tint2conf
+				</execute>
+			</action>
+		</item>
+		<item label="GTK Theme Switcher">
+			<action name="Execute">
+				<execute>
+					lxappearance
+				</execute>
+			</action>
+		</item>
+		<item label="Menu Configuration">
+			<action name="Execute">
+				<execute>
+					obmenu
+				</execute>
+			</action>
+		</item>
+		<separator/>
+		<item label="Reconfigure Openbox">
+			<action name="Reconfigure"/>
+		</item>
+	</menu>
+	<menu id="music" label="music">
+		<item label="audacious">
+			<action name="Execute">
+				<execute>
+					audacious
+				</execute>
+			</action>
+		</item>
+		<item label="sonata">
+			<action name="Execute">
+				<execute>
+					sonata
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="root-menu" label="Openbox 3">
+		<separator label="applications"/>
+		<item label="chromium">
+			<action name="Execute">
+				<command>
+					chromium
+				</command>
+			</action>
+		</item>
+		<item label="urxvt">
+			<action name="Execute">
+				<command>
+					urxvt
+				</command>
+			</action>
+		</item>
+		<item label="gvim">
+			<action name="Execute">
+				<command>
+					gvim
+				</command>
+			</action>
+		</item>
+		<item label="thunar">
+			<action name="Execute">
+				<command>
+					thunar
+				</command>
+			</action>
+		</item>
+		<menu id="music"/>
+		<separator label="System"/>
+		<menu id="system-menu"/>
+		<separator/>
+		<item label="Log Out">
+			<action name="Exit">
+				<prompt>
+					yes
+				</prompt>
+			</action>
+		</item>
+	</menu>
 </openbox_menu>
