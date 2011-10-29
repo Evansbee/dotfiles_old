@@ -37,41 +37,65 @@ URxvt.cursorColor:       #005f87
 URxvt.cursorColor2:      #87ffff
 urxvt.depth: 32
 
-*background:   #f7f7f7
-*foreground:   #2c2c2c
+#*background:   #f7f7f7
+#*foreground:   #2c2c2c
+
+*background:   #27271f
+*foreground:   #e7e7e7
 
 
 # Black
-*color0:    #2c2c2c
-*color8:    #2c2c2c
+#*color0:    #2c2c2c
+#*color8:    #2c2c2c
+*color0:    #27271f
+*color8:    #27271f
+
 
 # Red
-*color1:    #c6302c
-*color9:    #c6302c
+#*color1:    #c6302c
+#*color9:    #c6302c
+*color1:    #e40548
+*color9:    #e40548
+
 
 # Green
-*color2:    #4f770d
-*color10:   #4f770d
+#*color2:    #4f770d
+#*color10:   #4f770d
+
+*color2:    #73733f
+*color10:   #73733f
+
 
 # Yellow
-*color3:    #593900
-*color11:   #593900
+#*color3:    #593900
+#*color11:   #593900
+*color3:    #d9d25d
+*color11:   #d9d25d
+
 
 # Blue
-*color4:    #031d3a
-*color12:   #031d3a
+#*color4:    #031d3a
+#*color12:   #031d3a
+*color4:    #709792
+*color12:   #709792
+
 
 # Magenta
-*color5:    #af5f5f
-*color13:   #af5f5f
+#*color5:    #af5f5f
+#*color13:   #af5f5f
+*color5:    #af46a2
+*color13:   #af46a2
+
 
 # Cyan
-*color6:    #77aad3
-*color14:   #77aad3
+#*color6:    #77aad3
+#*color14:   #77aad3
+*color6:    #e88412
+*color14:   #e88412
 
 # White
-*color7:    #f7f7f7
-*color15:   #f7f7f7
+*color7:    #e7e7e7
+*color15:   #e7e7e7
 
 !{{{ XLOCK
 XLock.mode:          blank
