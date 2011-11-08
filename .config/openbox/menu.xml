@@ -64,6 +64,13 @@
 				</command>
 			</action>
 		</item>
+		<item label="firefox">
+			<action name="Execute">
+				<execute>
+					firefox
+				</execute>
+			</action>
+		</item>
 		<item label="urxvt">
 			<action name="Execute">
 				<command>
