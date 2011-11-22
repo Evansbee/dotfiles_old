@@ -22,8 +22,8 @@ urxvt*borderLess:       false
 urxvt*internalBorder:   0
 urxvt*externalBorder:   0
 
-urxvt.boldfont:         xft:DejaVu Sans Mono-Bold:pixelsize=14
-urxvt.font:             xft:DejaVu Sans Mono-Bold:pixelsize=14
+#urxvt.boldfont:         xft:DejaVu Sans Mono-Bold:pixelsize=14
+#urxvt.font:             xft:DejaVu Sans Mono-Bold:pixelsize=14
 
 
 urxvt*cutchars:         '"'()*<>[]{|}
