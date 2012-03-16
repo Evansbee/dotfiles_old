@@ -6,4 +6,6 @@ sleep 1s && xsetroot -cursor_name left_ptr &
 xscreensaver -no-splash &
 sh ~/.fehbg
 tint2 &
+dropboxd &
+conky &
 exec openbox-session
