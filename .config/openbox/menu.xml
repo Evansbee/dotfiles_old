@@ -40,6 +40,13 @@
 		</item>
 	</menu>
 	<menu id="music" label="music">
+		<item label="vlc">
+			<action name="Execute">
+				<execute>
+					vlc
+				</execute>
+			</action>
+		</item>
 		<item label="audacious">
 			<action name="Execute">
 				<execute>
