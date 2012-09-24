@@ -54,5 +54,9 @@ au InsertLeave * hi StatusLine term=reverse ctermfg=white ctermbg=darkgrey
 map n nzz 
 map N Nzz
 
+"goofy hack to make the mouse available for when I tell people do do something on my
+"pc -- also this might help from my iPad.
+set mouse=a
+
 "killer colorsheme
 colorscheme xoria256
