@@ -22,8 +22,8 @@ set smarttab
 "need to keep tabs for hand editing makefiles -- stupid.
 
 "better spacing
-set shiftwidth=3
-set softtabstop=3
+set shiftwidth=2
+set softtabstop=2
 
 
 autocmd FileType make set noexpandtab
@@ -42,6 +42,9 @@ set incsearch
 "highlight search results
 set hlsearch
 
+"fix encoding
+set encoding=utf-8
+
 "Status line gnarliness
 hi StatusLine term=reverse ctermbg=darkgrey ctermfg=white
 set laststatus=2
@@ -54,5 +57,6 @@ au InsertLeave * hi StatusLine term=reverse ctermfg=white ctermbg=darkgrey
 map n nzz 
 map N Nzz
 
+set mouse=a
 "killer colorsheme
 colorscheme xoria256
