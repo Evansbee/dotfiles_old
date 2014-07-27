@@ -12,6 +12,9 @@ zstyle ':completion:*' menu select
 
 alias source='source ~/.zshrc'
 
+export PATH="$PATH:$HOME/.rvm/bin"
+
+
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
@@ -23,4 +26,3 @@ function chpwd {
 chpwd
 
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
