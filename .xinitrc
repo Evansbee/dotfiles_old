@@ -7,4 +7,5 @@ sh ~/.fehbg
 tint2 &
 dropboxd &
 systemd --user &
+xflux -z 07030 &
 exec openbox-session
