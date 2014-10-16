@@ -39,6 +39,13 @@
 			<action name="Reconfigure"/>
 		</item>
 	</menu>
+	<menu id="office" label="office">
+		<item label="sublime">
+			<action name="Execute">
+				<execute>subl</execute>
+			</action>
+		</item>
+	</menu>
 	<menu id="music" label="music">
 		<item label="vlc">
 			<action name="Execute">
@@ -47,18 +54,9 @@
 				</execute>
 			</action>
 		</item>
-		<item label="audacious">
+		<item label="spotify">
 			<action name="Execute">
-				<execute>
-					audacious
-				</execute>
-			</action>
-		</item>
-		<item label="sonata">
-			<action name="Execute">
-				<execute>
-					sonata
-				</execute>
+				<execute>spotify</execute>
 			</action>
 		</item>
 	</menu>
@@ -69,13 +67,6 @@
 				<command>
 					chromium
 				</command>
-			</action>
-		</item>
-		<item label="firefox">
-			<action name="Execute">
-				<execute>
-					firefox
-				</execute>
 			</action>
 		</item>
 		<item label="urxvt">
@@ -99,6 +90,7 @@
 				</command>
 			</action>
 		</item>
+		<menu id="office"/>
 		<menu id="music"/>
 		<separator label="System"/>
 		<menu id="system-menu"/>

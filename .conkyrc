@@ -32,9 +32,9 @@ own_window_hints undecorate,sticky,skip_taskbar,skip_pager,below
 
 alignment top_right
 gap_x 25
-gap_y 340
-minimum_size 182 600
-maximum_width 182
+gap_y 395
+minimum_size 300 600
+maximum_width 300
 
 default_bar_size 60 8
 
@@ -45,42 +45,59 @@ draw_shades no
 
 default_color E2DACB
 
-color0 F0EBE2
-color1 FF6666
+color0 FEFEFE
+color1 ffa92c
 color2 E6E6E6
 
 TEXT
-${font DejaVu:style=Bold:size=8}System$stippled_hr${font}
-##############
-# - SYSTEM - #
-##############
-${color0}${voffset 6}${font OpenLogos:size=19}A${font}${color}${goto 32}${voffset -14}kernel:  ${alignr}${color2}${kernel}${color}
-${goto 32}uptime: ${alignr}${color2}${uptime}${color}
-# |--UPDATES
-#${goto 32}updates: ${alignr}${font DejaVu:style=Bold:size=8}${color1}${execi 360 pacman -Qu | wc -l | tail}${color}${font} ${color2}packages${color}
-# |--CPU
-${offset 1}${color0}${font Poky:size=16}P${font}${offset -19}${voffset 9}${cpubar cpu0 4,18}${color}${voffset -16}${goto 32}cpu1: ${font DejaVu:style=Bold:size=8}${color1}${cpu cpu1}%${color}${font} ${alignr}${color2}${cpugraph cpu1 8,60 CD646B F56F6E}${color}
-${goto 32}cpu2: ${font DejaVu:style=Bold:size=8}${color1}${cpu cpu2}%${color}${font} ${alignr}${color2}${cpugraph cpu2 8,60 CD646B F56F6E}${color}
-${goto 32}cpu3: ${font DejaVu:style=Bold:size=8}${color1}${cpu cpu3}%${color}${font} ${alignr}${color2}${cpugraph cpu3 8,60 CD646B F56F6E}${color}
-${goto 32}cpu4: ${font DejaVu:style=Bold:size=8}${color1}${cpu cpu4}%${color}${font} ${alignr}${color2}${cpugraph cpu4 8,60 CD646B F56F6E}${color}
-# |--MEM
-${color0}${font Poky:size=16}M${font}${color}${goto 32}${voffset -7}ram: ${font DejaVu:style=Bold:size=8}${color1}$memperc%${color}${font}
-${offset 1}${voffset 2}${color0}${membar 4,18}${color}${goto 32}${voffset -2}free: ${font DejaVu:style=Bold:size=8}${color2}${memeasyfree}${color}${font} used: ${font DejaVu:style=Bold:size=8}${color2}${mem}${color}${font}
-#############
-# - CLOCK - #
-#############
-${voffset 4}${font DejaVu:style=Bold:size=8}DATE $stippled_hr${font}
-${voffset -10}${alignc 46}${color2}${font Arial Black:size=30}${time %I:%M}${font}${color}
-${voffset 6}${alignc}${time %d %B %Y}${voffset -6}
-################
-# - CALENDAR - #
-################
-${voffset -2}${color0}${font Poky:size=16}D${font}${voffset -8}${font DejaVu:style=Bold:size=7}${offset -17}${voffset 4}${time %d}${font}${color}${voffset -1}${font Monospace:size=7}${execpi 300 DJS=`date +%_d`; cal |sed '2,7!d'| sed '/./!d' | sed 's/^/${goto 32} /'| sed 's/$/ /' | sed 's/^/ /' | sed /" $DJS "/s/" $DJS "/""'${voffset -1}${color1} '"$DJS"'${color}${font Monospace:size=7}'" "/}${voffset -1}
-##########
-# - HD - #
-##########
-${voffset 4}${font DejaVu:style=Bold:size=8}HD $stippled_hr${font}
-${execpi 30 /usr/share/conkycolors/bin/conkyHD1}
-#${execpi 30 /usr/share/conkycolors/bin/conkyHD2}
-#${execpi 30 /usr/share/conkycolors/bin/conkyHD3}
-#${execpi 30 /usr/share/conkycolors/bin/conkyHD4}
+${color0}${font ConkyColorsLogos:style=Regular:size=36}a${font}${color}
+${voffset -48}\
+${goto 60}hostname:${alignr}${color2}${nodename}${color}
+${goto 60}kernel:  ${alignr}${color2}${kernel}${color}
+${goto 60}uptime: ${alignr}${color2}${uptime}${color}
+
+${color0}${voffset 60}${font ConkyColors:style=Regular:size=36}e${font}${color}
+${voffset -80}\
+${goto 60}cpu 1: ${font DejaVu:style=Bold:size=8}${color1}${cpu cpu1}%${color}${font}
+${goto 60}${color2}${cpubar cpu1 8,240 CD646B F56F6E}${color}
+${goto 60}cpu 2: ${font DejaVu:style=Bold:size=8}${color1}${cpu cpu2}%${color}${font}
+${goto 60}${color2}${cpubar cpu2 8,240 CD646B F56F6E}${color}
+${goto 60}cpu 3: ${font DejaVu:style=Bold:size=8}${color1}${cpu cpu3}%${color}${font}
+${goto 60}${color2}${cpubar cpu3 8,240 CD646B F56F6E}${color}
+${goto 60}cpu 4: ${font DejaVu:style=Bold:size=8}${color1}${cpu cpu4}%${color}${font}
+${goto 60}${color2}${cpubar cpu4 8,240 CD646B F56F6E}${color}
+
+${color0}${voffset 30}${font ConkyColors:style=Regular:size=36}f${font}${color}
+${voffset -56}\
+${goto 60}ram: ${font DejaVu:style=Bold:size=8}${color1}${memperc}%${color}${font}
+${goto 60}${color2}${membar 8,240 CD646B F56F6E}${color}
+${goto 60}swap: ${font DejaVu:style=Bold:size=8}${color1}${swapperc}%${color}${font}
+${goto 60}${color2}${swapbar 8,240 CD646B F56F6E}${color}
+
+${color0}${voffset 40}${font ConkyColors:style=Regular:size=36}i${font}${color}
+${voffset -70}\
+${goto 60}root: ${font DejaVu:style=Bold:size=8}${color1}${fs_used_perc /}% (${fs_used /} / ${fs_size /})${color}${font}
+${goto 60}${color2}${fs_bar 8,240 /}${color}
+${goto 60}boot: ${font DejaVu:style=Bold:size=8}${color1}${fs_used_perc /boot}% (${fs_used /boot} / ${fs_size /boot})${color}${font}
+${goto 60}${color2}${fs_bar 8,240 /boot}${color}
+${goto 60}tank: ${font DejaVu:style=Bold:size=8}${color1}${fs_used_perc /mnt/tank}% (${fs_used /mnt/tank} / ${fs_size /mnt/tank})${color}${font}
+${goto 60}${color2}${fs_bar 8,240 /mnt/tank}${color}
+
+${color0}${voffset 50}${font ConkyColors:style=Regular:size=36}l${font}${color}
+${voffset -78}\
+${goto 60}down: ${font DejaVu:style=Bold:size=8}${color1}${downspeed enp2s0}${color}${font}
+${goto 60}${color2}${downspeedgraph enp2s0 24,240 CD646B F56F6E}${color}
+${goto 60}up: ${font DejaVu:style=Bold:size=8}${color1}${upspeed enp2s0}${color}${font}
+${goto 60}${color2}${upspeedgraph enp2s0 24,240 CD646B F56F6E }${color}
+
+${color0}${voffset 40}${font ConkyColors:style=Regular:size=36}C${font}${color}
+${voffset -70}\
+${goto 60}name${goto 180}  cpu${goto 260} mem
+${voffset -8}\
+${goto 60}${hr}
+${voffset -2}\
+${goto 60}${top name 1}${goto 180}${top cpu 1}%${goto 260}${top mem 1}%
+${goto 60}${top name 2}${goto 180}${top cpu 2}%${goto 260}${top mem 2}%
+${goto 60}${top name 3}${goto 180}${top cpu 3}%${goto 260}${top mem 3}%
+${goto 60}${top name 4}${goto 180}${top cpu 4}%${goto 260}${top mem 4}%
+${goto 60}${top name 5}${goto 180}${top cpu 5}%${goto 260}${top mem 5}%
